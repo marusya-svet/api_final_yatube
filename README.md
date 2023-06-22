@@ -1,35 +1,37 @@
-# api_final
-api final
-Получение публикаций
+# Yatube API
+## _API для соцнальной сети yatube_
 
-Получить список всех публикаций. При указании параметров limit и offset выдача должна работать с пагинацией.
-QUERY PARAMETERS
+Через это API вы можете смотреть, создавать, редактировать и удалять объекты Post, Group, Comment
 
-limit	
-integer
-Количество публикаций на страницу
-offset	
-integer
-Номер страницы после которой начинать выдачу
-Responses
 
-200 Удачное выполнение запроса без пагинации
+### Tecnologies
+- Python 3.7
+- DRF
 
-GET
-/api/v1/posts/
-Response samples
+### Run project in dev
+- Install and activate virtual environment
+```
+python3 -m venv venv
+```
+```
+source venv/bin/activate
+```
+- In 'api_final_yatube' create ".env" file and place there SECRET_KEY, DEBUG, ALLOWED_HOSTS
 
-200
-Content type
-application/json
+- Install dependencies from the file requirements.txt
+```
+pip install -r requirements.txt
+``` 
+- Make migrations
+```
+python3 manage.py migrate
+``` 
+- Run progect
+```
+python3 manage.py runserver
+``` 
 
-Copy
-Expand all Collapse all
-{
-"count": 123,
-"next": "http://api.example.org/accounts/?offset=400&limit=100",
-"previous": "http://api.example.org/accounts/?offset=200&limit=100",
-"results": [
-{}
-]
-}
+
+### Author
+*Maria Svetlichnaya*
+[telegram](https://t.me/msvetlichnaya)
