@@ -33,14 +33,13 @@ python3 manage.py runserver
 
 
 ## Примеры запросов API
-GET api/v1/posts/ - получить список всех публикаций.
-GET api/v1/posts/{id}/ - получение публикации по id
-GET api/v1/groups/ - получение списка доступных сообществ
-GET api/v1/groups/{id}/ - получение информации о сообществе по id
-GET api/v1/{post_id}/comments/ - получение всех комментариев к публикации
-GET api/v1/{post_id}/comments/{id}/ - Получение комментария к публикации по id
-
-POST api/v1/posts/ -> передаем:
+- GET api/v1/posts/ - получить список всех публикаций.
+- GET api/v1/posts/{id}/ - получение публикации по id
+- GET api/v1/groups/ - получение списка доступных сообществ
+- GET api/v1/groups/{id}/ - получение информации о сообществе по id
+- GET api/v1/{post_id}/comments/ - получение всех комментариев к публикации
+- GET api/v1/{post_id}/comments/{id}/ - Получение комментария к публикации по id
+- POST api/v1/posts/ -> передаем:
 {
 "text": "string",
 "image": "string",
